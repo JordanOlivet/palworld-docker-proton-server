@@ -29,9 +29,6 @@ fi
 if [ "${SERVER_PASSWORD}" != "" ];then
     ARGS="${ARGS} -serverpassword=${SERVER_PASSWORD}"
 fi
-if [ "${SERVER_PASSWORD}" != "" ];then
-    ARGS="${ARGS} -serverpassword=${SERVER_PASSWORD}"
-fi
 if [ "${NO_MULTITHREADING}" ]; then
     ARGS=${ARGS}
 else
