@@ -29,9 +29,6 @@ fi
 if [ "${SERVER_PASSWORD}" != "" ];then
     ARGS="${ARGS} -serverpassword=${SERVER_PASSWORD}"
 fi
-if [ "${SERVER_PASSWORD}" != "" ];then
-    ARGS="${ARGS} -serverpassword=${SERVER_PASSWORD}"
-fi
 if [ "${NO_MULTITHREADING}" ]; then
     ARGS=${ARGS}
 else
@@ -39,7 +36,7 @@ else
 fi 
 
 # advertise server
-ARGS="${ARGS} EpicApp=PalServer"
+ARGS="${ARGS} EpicApp=PalServer -nosteam"
 
 PalServerDir=/app/PalServer
 

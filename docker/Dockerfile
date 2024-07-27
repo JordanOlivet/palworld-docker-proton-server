@@ -13,7 +13,7 @@ RUN mkdir -p ${STEAM_PATH}
 WORKDIR ${STEAM_PATH}
 
 # Install Proton build from Glorious Eggroll
-ENV PROTON_VERSION=GE-Proton8-28
+ENV PROTON_VERSION=GE-Proton9-10
 
 RUN mkdir -p compatibilitytools.d/
 RUN wget -O - \
