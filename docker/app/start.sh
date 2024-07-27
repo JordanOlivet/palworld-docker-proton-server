@@ -41,11 +41,11 @@ ARGS="${ARGS} EpicApp=PalServer -nosteam"
 PalServerDir=/app/PalServer
 
 mkdir -p ${PalServerDir}
-DirPerm=$(stat -c "%u:%g:%a" ${PalServerDir})
-if [ "${DirPerm}" != "1000:1000:755" ];then
-    echo "${PalServerDir} has unexpected permission ${DirPerm} != 1000:1000:755"
-    die
-fi
+# DirPerm=$(stat -c "%u:%g:%a" ${PalServerDir})
+# if [ "${DirPerm}" != "1000:1000:755" ];then
+#     echo "${PalServerDir} has unexpected permission ${DirPerm} != 1000:1000:755"
+#     die
+# fi
 
 set -x
 $steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir ${PalServerDir} +login anonymous +app_update ${APPID} validate +quit || die
