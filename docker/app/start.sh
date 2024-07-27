@@ -39,7 +39,7 @@ else
 fi 
 
 # advertise server
-ARGS="${ARGS} EpicApp=PalServer"
+ARGS="${ARGS} EpicApp=PalServer -nosteam"
 
 PalServerDir=/app/PalServer
 
