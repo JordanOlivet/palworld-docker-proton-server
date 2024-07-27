@@ -51,7 +51,7 @@ set -x
 $steamcmd +@sSteamCmdForcePlatformType windows +force_install_dir ${PalServerDir} +login anonymous +app_update ${APPID} validate +quit || die
 set +x
 
-PalServerExe="${PalServerDir}/Pal/Binaries/Win64/PalServer-Win64-Test.exe"
+PalServerExe="${PalServerDir}/Pal/Binaries/Win64/PalServer-Win64-Shipping-Cmd.exe"
 if [ ! -f ${PalServerExe} ];then
     echo "${PalServerExe} does not exist"
     die
