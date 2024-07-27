@@ -2,8 +2,7 @@ version: '3.9'
 services:
   palworld:
     restart: unless-stopped
-    build: ./docker
-    image: palworld-proton-server
+    image: jordanolivet/palworld-proton-server
     volumes:
       - ./server:/app/PalServer
       - ./backups:/app/backups
